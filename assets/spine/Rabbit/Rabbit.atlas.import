@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dydcbixcfbhnu"
+path="res://.godot/imported/Rabbit.atlas-7d8470e78cea51784b95d19b997e26b9.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/Rabbit/Rabbit.atlas"
+dest_files=["res://.godot/imported/Rabbit.atlas-7d8470e78cea51784b95d19b997e26b9.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

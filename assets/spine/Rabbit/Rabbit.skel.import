@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://mgqrkqn1crs2"
+path="res://.godot/imported/Rabbit.skel-0201b53687b85f4546498cb3e76c6679.spskel"
+
+[deps]
+
+source_file="res://assets/spine/Rabbit/Rabbit.skel"
+dest_files=["res://.godot/imported/Rabbit.skel-0201b53687b85f4546498cb3e76c6679.spskel"]
+
+[params]
+
