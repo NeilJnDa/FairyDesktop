@@ -1,30 +1,68 @@
-[gd_scene load_steps=3 format=3 uid="uid://1xduggg13d40"]
+[gd_scene load_steps=4 format=3 uid="uid://b8bvrqfcuhs2h"]
 
 [ext_resource type="SpineSkeletonDataResource" uid="uid://yl03y0i18vhu" path="res://assets/spine/Rabbit/rabbit_skeleton_data_resource.tres" id="1_jgyig"]
 [ext_resource type="Script" uid="uid://du3hlqy066s5k" path="res://scripts/characters/character.gd" id="1_uhyrn"]
 
-[node name="Character" type="Node2D"]
-position = Vector2(5, -136)
-script = ExtResource("1_uhyrn")
-metadata/_edit_group_ = true
+[sub_resource type="LabelSettings" id="LabelSettings_uhyrn"]
+font_size = 46
 
-[node name="SpineSprite" type="SpineSprite" parent="."]
+[node name="character" type="SpineSprite"]
 skeleton_data_res = ExtResource("1_jgyig")
+root = true
+root_color = Color(1, 1, 1, 0.501961)
 paths = true
 preview_skin = "Black"
 preview_animation = "Snatch"
 preview_frame = false
 preview_time = 0.0
 z_index = 1
+script = ExtResource("1_uhyrn")
 
-[node name="Button" type="Button" parent="."]
-offset_left = -159.0
-offset_top = 285.0
-offset_right = 145.0
-offset_bottom = 451.0
-text = "Button"
+[node name="Panel" type="Panel" parent="."]
+offset_left = -88.0
+offset_top = -191.0
+offset_right = 90.0
+offset_bottom = -67.0
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.1
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -78.0
+offset_top = -45.0
+offset_right = 78.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="BtnStart" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Start"
+
+[node name="BtnStop" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Stop"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.0
+offset_top = -53.0
+offset_right = 60.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "11:00"
+label_settings = SubResource("LabelSettings_uhyrn")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

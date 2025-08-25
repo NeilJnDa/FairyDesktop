@@ -12,13 +12,27 @@ config_version=5
 
 config/name="FairyDesktop"
 run/main_scene="uid://cowqrvngoym0b"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
+
+[autoload]
+
+MainScene="*res://scripts/scenes/main_scene.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/resizable=false
+window/size/borderless=true
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
 
 [dotnet]
 
 project/assembly_name="FairyDesktop"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+viewport/transparent_background=true

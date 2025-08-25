@@ -1,10 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://cowqrvngoym0b"]
-
-[ext_resource type="PackedScene" uid="uid://1xduggg13d40" path="res://scenes/prefab/character.tscn" id="1_o5qli"]
+[gd_scene format=3 uid="uid://cowqrvngoym0b"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="Character" parent="." instance=ExtResource("1_o5qli")]
-position = Vector2(-8, -207)
